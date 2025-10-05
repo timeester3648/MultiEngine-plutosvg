@@ -25,6 +25,10 @@
 
 #include <plutovg.h>
 
+#ifndef PLUTOSVG_BUILD_STATIC
+	#define PLUTOSVG_BUILD_STATIC
+#endif
+
 #if defined(PLUTOSVG_BUILD_STATIC)
 #define PLUTOSVG_EXPORT
 #define PLUTOSVG_IMPORT
